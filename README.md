@@ -32,3 +32,21 @@ Follow the instructions below to launch your EMR cluster and notebook.
 * Number of instance: 3
 * EC2 key pair: Proceed without an EC2 key pair or feel free to use one if you'd like
 * You can keep the remaining default setting and click "Create cluster" on the bottom right.
+![create cluster](https://github.com/Tselmeg-C/Churn_prediction_Udacity_Capstone/blob/master/images%20in%20Github%20readme/configure-cluster.png)
+**Step 2: Wait for Cluster "Waiting" Status**
+Once you create the cluster, you'll see a status next to your cluster name that says Starting. Wait a short time for this status to change to Waiting before moving on to the next step.
+![cluster waiting](https://github.com/Tselmeg-C/Churn_prediction_Udacity_Capstone/blob/master/images%20in%20Github%20readme/cluster-waiting.png)
+**Step 3: Create Notebook**
+Now that you launched your cluster successfully, let's create a notebook to run Spark on that cluster.
+
+Select "Notebooks" in the menu on the left, and click the "Create notebook" button.
+![create notebook](https://github.com/Tselmeg-C/Churn_prediction_Udacity_Capstone/blob/master/images%20in%20Github%20readme/create-notebook-button.png)
+**Step 4: Configure your notebook**
+* Enter a name for your notebook
+* Select "Choose an existing cluster" and choose the cluster you just created
+* Use the default setting for "AWS service role" - this should be "EMR_Notebooks_DefaultRole" or "Create default role" if you haven't done this before.
+
+You can keep the remaining default settings and click "Create notebook" on the bottom right.
+![configur notebook](https://github.com/Tselmeg-C/Churn_prediction_Udacity_Capstone/blob/master/images%20in%20Github%20readme/configure-notebook.png)
+
+
