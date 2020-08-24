@@ -73,8 +73,18 @@ Now you can run Spark code for your project in this notebook, which EMR will run
 
 For more information on EMR notebooks, click [here](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks.html).
 
-Pricing - Be Careful!
+**Pricing - Be Careful!**
 
 From this point on, AWS will charge you for running your EMR cluster. 
+
+**Starter Code**
+
+Below, you'll find starter code to create a spark session and read in the full 12 GB dataset. You can use the following link to access the public dataset:
+
+Full Sparkify Dataset: *s3n://udacity-dsnd/sparkify/sparkify_event_data.json*
+
+You can also use the link below to access the mini 123MB dataset:
+
+Mini Sparkify Dataset: *s3n://udacity-dsnd/sparkify/mini_sparkify_event_data.json*
 
 
