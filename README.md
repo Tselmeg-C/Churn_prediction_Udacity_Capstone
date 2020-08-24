@@ -87,4 +87,20 @@ You can also use the link below to access the mini 123MB dataset:
 
 Mini Sparkify Dataset: *s3n://udacity-dsnd/sparkify/mini_sparkify_event_data.json*
 
+![start code](https://github.com/Tselmeg-C/Churn_prediction_Udacity_Capstone/blob/master/images%20in%20Github%20readme/spark-notebook-1.png)
 
+And here is the code repeated below, which you can copy from and paste easily into your notebook.
+
+`<# Starter code
+from pyspark.sql import SparkSession
+
+# Create spark session
+spark = SparkSession \
+    .builder \
+    .appName("Sparkify") \
+    .getOrCreate()
+
+# Read in full sparkify dataset
+event_data = "s3n://udacity-dsnd/sparkify/sparkify_event_data.json"
+df = spark.read.json(event_data)
+df.head()>`
