@@ -77,6 +77,8 @@ For more information on EMR notebooks, click [here](https://docs.aws.amazon.com/
 
 From this point on, AWS will charge you for running your EMR cluster. 
 
+**For those who want to challenge yourselves, you could start with the starter code instead of referring to my code**
+
 **Starter Code**
 
 Below, you'll find starter code to create a spark session and read in the full 12 GB dataset. You can use the following link to access the public dataset:
@@ -89,19 +91,9 @@ Mini Sparkify Dataset: *s3n://udacity-dsnd/sparkify/mini_sparkify_event_data.jso
 
 ![start code](https://github.com/Tselmeg-C/Churn_prediction_Udacity_Capstone/blob/master/images%20in%20Github%20readme/spark-notebook-1.png)
 
-And here is the code repeated below, which you can copy from and paste easily into your notebook.
-`<
-#Starter code
-from pyspark.sql import SparkSession
+When you run the last cell, you'll see a box appear that says "Spark Job Progress." Click on the arrow in that box to view your cluster's progress as it reads the full 12GB dataset! (Screenshot of this is shown below.)
 
-#Create spark session
-spark = SparkSession \
-    .builder \
-    .appName("Sparkify") \
-    .getOrCreate()
+![notebook 2](https://github.com/Tselmeg-C/Churn_prediction_Udacity_Capstone/blob/master/images%20in%20Github%20readme/spark-notebook-2.png)
 
-#Read in full sparkify dataset
-event_data = "s3n://udacity-dsnd/sparkify/sparkify_event_data.json"
-df = spark.read.json(event_data)
-df.head()
->`
+![notebook 3](https://github.com/Tselmeg-C/Churn_prediction_Udacity_Capstone/blob/master/images%20in%20Github%20readme/spark-notebook-3.png)
+
