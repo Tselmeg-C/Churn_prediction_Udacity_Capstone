@@ -59,4 +59,22 @@ You can keep the remaining default settings and click "Create notebook" on the b
 
 ![configur notebook](https://github.com/Tselmeg-C/Churn_prediction_Udacity_Capstone/blob/master/images%20in%20Github%20readme/configure-notebook.png)
 
+**Step 5: Wait for Notebook "Ready" Status, Then Open**
+
+Once you create an EMR notebook, you'll need to wait a short time before the notebook status changes from Starting or Pending to Ready. Once your notebook status is Ready, click the "Open" button to open the notebook.
+
+![open notebook](https://github.com/Tselmeg-C/Churn_prediction_Udacity_Capstone/blob/master/images%20in%20Github%20readme/notebook-ready.png)
+
+**Start Coding!**
+
+Now you can run Spark code for your project in this notebook, which EMR will run on your cluster. In the next page, you'll find starter code to create a spark session and read in the full 12GB dataset for the DSND Capstone project.
+
+![empty notebook](https://github.com/Tselmeg-C/Churn_prediction_Udacity_Capstone/blob/master/images%20in%20Github%20readme/empty-notebook.png)
+
+For more information on EMR notebooks, click [here](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks.html).
+
+Pricing - Be Careful!
+
+From this point on, AWS will charge you for running your EMR cluster. 
+
 
