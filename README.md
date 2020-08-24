@@ -21,7 +21,14 @@ Launch EMR Cluster and Notebook
 Follow the instructions below to launch your EMR cluster and notebook.
 
 * Open a regular AWS account (if you don't already have one) following the instructions via the [Amazon Web Service Help Center](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
-* Go to the [Amazon EMR Console] (https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Felasticmapreduce%2Fhome%3Fstate%3DhashArgs%2523%26isauthcode%3Dtrue&client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Femr&forceMobileApp=0&code_challenge=eP2O9hqlLWWxfs_97cQ_W-0F5Bccl4DFS9PDSR4Rptg&code_challenge_method=SHA-256)
+* Go to the [Amazon EMR Console](https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Felasticmapreduce%2Fhome%3Fstate%3DhashArgs%2523%26isauthcode%3Dtrue&client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Femr&forceMobileApp=0&code_challenge=eP2O9hqlLWWxfs_97cQ_W-0F5Bccl4DFS9PDSR4Rptg&code_challenge_method=SHA-256)
 * Select "Clusters" in the menu on the left, and click the "Create cluster" button.
 
 ![Image of AWS](https://github.com/Tselmeg-C/Churn_prediction_Udacity_Capstone/blob/master/images%20in%20Github%20readme/amazon-emr.png)
+**Step 1: Configure your cluster with the following settings:**
+* Release: *emr-5.20.0* or later
+* Applications: *Spark*: Spark 2.4.0 on Hadoop 2.8.5 YARN with Ganglia 3.7.2 and Zeppelin 0.8.0
+* Instance type: *m3.xlarge*
+* Number of instance: 3
+* EC2 key pair: Proceed without an EC2 key pair or feel free to use one if you'd like
+* You can keep the remaining default setting and click "Create cluster" on the bottom right.
