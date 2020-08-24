@@ -8,9 +8,9 @@ Churn prediction, namely predicting clients who might want to turn down the serv
 2. how to use Spark MLlib to build machine learning models with large datasets
 
 **Three jupyter notebook files were uploaded:**
-1. Sparkify_visualization: Codes for cleaning small data set and exploratory visualization
-2. Sparkify_modeling: Codes for cleaning small data set and modeling
-3. Sparkify_AWS: Codes for analyzing big data set on AWS EMR cluster (not the exactly scaled codes from the other two parts)
+1. **_Sparkify_visualization_**: Codes for cleaning small data set and exploratory visualization
+2. **_Sparkify_modeling_**: Codes for cleaning small data set and modeling
+3. **_Sparkify_AWS_**: Codes for analyzing big data set on AWS EMR cluster (Because of limited time and budget, I only run this version of code once on AWS cluster. This is not the exactly scaled codes from the other two parts. However, the other two notebooks should be completely scalable on big data set) 
 
 **AWS EMR setting:**
 
