@@ -8,10 +8,12 @@ Skills examplified on this project are:
 2. how to use Spark MLlib to build machine learning models with large datasets
 
 Three jupyter notebook files were uploaded:
-Sparkify_visualization: Codes for cleaning small data set and exploratory visualization
-Sparkify_modeling: Codes for cleaning small data set and modeling
-Sparkify_AWS: Codes for analyzing big data set on AWS EMR cluster (not the exactly scaled codes from the other two parts)
+1.Sparkify_visualization: Codes for cleaning small data set and exploratory visualization
+2.Sparkify_modeling: Codes for cleaning small data set and modeling
+3.Sparkify_AWS: Codes for analyzing big data set on AWS EMR cluster (not the exactly scaled codes from the other two parts)
 
 AWS EMR setting:
-On AWS, the full 12GB dataset was hosted on a public S3 bucket, and expect to use about $30 dollars or more (I spent around 50 :() to run this cluster while you build your project for a week with the following setting. 
+On AWS, the full 12GB dataset was hosted on a public S3 bucket, and expect to use about $30 dollars or more to run this cluster while you build your project for a week with the following setting. 
 
+
+![Image of AWS](https://github.com/Tselmeg-C/Churn_prediction_Udacity_Capstone/blob/master/images%20in%20Github%20readme/amazon-emr.png)
