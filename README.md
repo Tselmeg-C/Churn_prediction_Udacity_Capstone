@@ -8,12 +8,18 @@ Skills examplified on this project are:
 2. how to use Spark MLlib to build machine learning models with large datasets
 
 Three jupyter notebook files were uploaded:
-1.Sparkify_visualization: Codes for cleaning small data set and exploratory visualization
-2.Sparkify_modeling: Codes for cleaning small data set and modeling
-3.Sparkify_AWS: Codes for analyzing big data set on AWS EMR cluster (not the exactly scaled codes from the other two parts)
+1. Sparkify_visualization: Codes for cleaning small data set and exploratory visualization
+2. Sparkify_modeling: Codes for cleaning small data set and modeling
+3. Sparkify_AWS: Codes for analyzing big data set on AWS EMR cluster (not the exactly scaled codes from the other two parts)
 
 AWS EMR setting:
 On AWS, the full 12GB dataset was hosted on a public S3 bucket, and expect to use about $30 dollars or more to run this cluster while you build your project for a week with the following setting. 
 
+Launch EMR Cluster and Notebook
+Follow the instructions below to launch your EMR cluster and notebook.
+
+Open a regular AWS account (if you don't already have one) following the instructions via the Amazon Web Service Help Center
+Go to the Amazon EMR Console
+Select "Clusters" in the menu on the left, and click the "Create cluster" button.
 
 ![Image of AWS](https://github.com/Tselmeg-C/Churn_prediction_Udacity_Capstone/blob/master/images%20in%20Github%20readme/amazon-emr.png)
