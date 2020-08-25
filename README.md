@@ -97,3 +97,12 @@ When you run the last cell, you'll see a box appear that says "Spark Job Progres
 
 ![notebook 3](https://github.com/Tselmeg-C/Churn_prediction_Udacity_Capstone/blob/master/images%20in%20Github%20readme/spark-notebook-3.png)
 
+**Mini Data Analysis##
+
+**Steps:**
+1. Import libraries
+2. Instantiate a Spark session
+3. 
+
+
+
