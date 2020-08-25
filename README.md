@@ -86,7 +86,7 @@ When you run the last cell, you'll see a box appear that says "Spark Job Progres
 
 ![notebook 3](https://github.com/Tselmeg-C/Churn_prediction_Udacity_Capstone/blob/master/images%20in%20Github%20readme/spark-notebook-3.png)
 
-## Data Analysis on Mini Data Set
+## Analysis on Mini Data Set
 
 ### Code Structure
 1. Import libraries
@@ -98,7 +98,51 @@ When you run the last cell, you'll see a box appear that says "Spark Job Progres
 7. Conclusion
 8. Discussion
 
-#### 
+#### Libraries
+* Pyspark
+* Pyspark.sql
+* Pyspark.ml 
+* Numpy
+* Pandas
+* Seaborn
+* Matplotlib
+
+#### Data Cleaning
+* Missing values or empty strings handling
+* Simplifying categorical variables *location* and *userAgent*
+* Tranformation of timestamps to epoch time
+
+#### Exploration of Dataset
+* Churn and downgrade definition
+* Visualization of behavior for users who stayed vs users who churned
+
+#### Feature Engineering
+* Assembling features
+* Transforming categorical variables
+* Scaling features
+* Transforming to vector
+
+#### Modeling
+* Models: Logistic regression, random forest, gradient-boosted trees
+* Evaluator: Binary, Multiclass
+* Metrics: F1 and AUC
+* Hyperparameter tuning
+* Cross validation
+
+#### Conclusion
+
+
+#### Future work
+
+**Finer feature engineering**
+
+Feature engineering was one of the most important steps on this project, due to the trade-off between model performance and calculation capacity, it was impossible and unnecessary to select as many features as I wanted. Fewer features were tested on the full data set, as a result, the model performance was not satisfying, that's why I created more features and tested on the small data set. Although there was an improvement in the model performance, it was probably not the ideal result. There are some techniques that might help in the feature selection process. For example, the ChiSqSelector provided by Spark ML for selecting significant features.
+
+**Build balanced training data**
+
+Imbalanced samples (with more "0" labeled rows than "1") was another factor that holding back our model performance. Introducing weight balance was only possible for the logistic regression algorithm. In future work, we could randomly select the same number of "0" rows to "1" rows to create balanced training data and fit models, which might improve the model performances. 
+
+
 
 
 
