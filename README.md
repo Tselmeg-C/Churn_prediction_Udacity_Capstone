@@ -132,6 +132,10 @@ When you run the last cell, you'll see a box appear that says "Spark Job Progres
 
 #### Conclusion
 
+In this project, churn prediction was performed based on an event data set for a music streaming provider. This was basically a binary classification problem. After loading and cleaning data, I performed some exploratory analysis and provided insights on the next step of feature engineering. All together 13 explanatory features were selected and logistic regression, random forest, and gradient-boosted tree models were fitted respectively to a training data set.
+
+The model performance was the best for the logistic regression on small data set, with an F1 score of 73.10 on the test set. The other two models were both suffered from overfitting. Hyperparameter tuning and cross-validation was not very helpful in solving overfitting, probably because of a small number of sample size. Due to time and budget limitations, the final models were not tested on the big data set. However, the completely scalable process shed a light on solving the churn prediction problem on big data with Spark on Cloud.
+
 
 #### Future work
 
@@ -144,6 +148,8 @@ Feature engineering was one of the most important steps on this project, due to 
 Imbalanced samples (with more "0" labeled rows than "1") was another factor that holding back our model performance. Introducing weight balance was only possible for the logistic regression algorithm. In future work, we could randomly select the same number of "0" rows to "1" rows to create balanced training data and fit models, which might improve the model performances. 
 
 
+## Acknowledgment
 
+This is my capstone project on Udacity Data Scientist Nanodegree program. Thanks to Udacity for providing such a wonderful program, making it possible for many with different backgrounds to step into the field of data science. 
 
 
